@@ -36,28 +36,19 @@ namespace lab_1_3
             points[0] = p1;
             points[1] = p2;
         }
-        public Figure(Point p1, Point p2, Point p3)
+        public Figure(Point p1, Point p2, Point p3) : this (p1, p2)
         {
             points = new Point[3];
-            points[0] = p1;
-            points[1] = p2;
             points[2] = p3;
         }
-        public Figure(Point p1, Point p2, Point p3, Point p4)
+        public Figure(Point p1, Point p2, Point p3, Point p4) : this (p1, p2, p3)
         {
             points = new Point[4];
-            points[0] = p1;
-            points[1] = p2;
-            points[2] = p3;
             points[3] = p4;
         }
-        public Figure(Point p1, Point p2, Point p3, Point p4, Point p5)
+        public Figure(Point p1, Point p2, Point p3, Point p4, Point p5) : this (p1, p2, p3, p4)
         {
             points = new Point[5];
-            points[0] = p1;
-            points[1] = p2;
-            points[2] = p3;
-            points[3] = p4;
             points[4] = p5;
         }
         private Figure(Point[] points, string name)
